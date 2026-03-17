@@ -815,7 +815,7 @@ Request Demo →
     Personal Finance Tracker — Offline PWA
   </div>
   <h1>Your money.<br><span class="grad">Fully under control.</span></h1>
-  <p class="hero-sub">A complete personal finance tracker built as a PWA. Track every peso, plan every goal, and understand your financial health — all in one beautifully designed app.</p>
+  <p class="hero-sub">A complete personal finance tracker built as a PWA. Track every peso, plan every goal, and understand your financial health — beautifully designed with card-based accounts, smart net worth breakdown, and powerful analytics.</p>
   <div class="hero-actions">
     <a class="nav-cta" onclick="window.location.href='mailto:alforquefelixmarco@gmail.com'">
 Request Demo →
@@ -824,7 +824,7 @@ Request Demo →
   </div>
   <div class="hero-stats">
     <div class="hstat">
-      <div class="hstat-val blue">13</div>
+      <div class="hstat-val blue">14</div>
       <div class="hstat-lbl">Panels</div>
     </div>
     <div class="hstat">
@@ -902,24 +902,28 @@ Request Demo →
     <!-- Accounts -->
     <div class="fcard reveal">
       <div class="fcard-glow" style="background:var(--teal)"></div>
-      <div class="fcard-icon bg-teal c-teal">🏦</div>
-      <div class="fcard-title">Accounts & Credit Cards</div>
-      <div class="fcard-desc">Add bank accounts, e-wallets, and credit cards. Track balances, credit limits, utilization, and billing cycles in one place.</div>
-      <div class="mini-ui" style="margin-top:16px">
-        <div class="mini-row" style="background:rgba(34,212,240,0.05)">
-          <div class="mini-dot" style="background:rgba(34,212,240,0.15)">🏦</div>
-          <div><div class="mini-name">BDO Savings</div><div class="mini-sub">Savings Account</div></div>
-          <div class="mini-amt pos">₱42,500</div>
+      <div class="fcard-icon bg-teal c-teal">💳</div>
+      <div class="fcard-title">Card-Style Accounts</div>
+      <div class="fcard-desc">Accounts display as realistic bank cards — gradient tinted by your uploaded logo, with EMV chip, contactless icon, card number, cardholder name, and network badge. Tap to reveal actions, drag to reorder.</div>
+      <div class="fcard-tags">
+        <span class="ftag" style="background:rgba(34,212,240,0.15);color:var(--teal)">Logo upload</span>
+        <span class="ftag" style="background:rgba(59,107,255,0.15);color:var(--blue2)">Visa / MC / Amex</span>
+        <span class="ftag" style="background:rgba(139,60,247,0.15);color:var(--purple)">Drag reorder</span>
+        <span class="ftag" style="background:rgba(32,204,120,0.15);color:var(--green)">Cash card design</span>
+      </div>
+      <!-- Mini card mockup -->
+      <div style="margin-top:16px;border-radius:14px;padding:14px;background:linear-gradient(135deg,rgba(34,212,240,0.18) 0%,rgba(34,212,240,0.06) 50%,rgba(13,14,26,0.9) 100%);border:1px solid rgba(34,212,240,0.20);position:relative;overflow:hidden">
+        <div style="position:absolute;top:-30px;right:-30px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(34,212,240,0.18),transparent 70%);pointer-events:none"></div>
+        <div style="position:absolute;top:0;left:0;width:3px;height:100%;background:var(--teal);opacity:0.5;border-radius:3px 0 0 3px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+          <div style="width:36px;height:36px;border-radius:9px;background:rgba(34,212,240,0.15);display:flex;align-items:center;justify-content:center;font-size:16px">🏦</div>
+          <span style="font-size:9px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:999px;background:rgba(34,212,240,0.12);color:var(--teal)">E-WALLET</span>
         </div>
-        <div class="mini-row">
-          <div class="mini-dot" style="background:rgba(32,204,120,0.15)">💳</div>
-          <div><div class="mini-name">GCash</div><div class="mini-sub">E-Wallet</div></div>
-          <div class="mini-amt pos">₱8,200</div>
-        </div>
-        <div class="mini-row">
-          <div class="mini-dot" style="background:rgba(255,85,102,0.15)">💳</div>
-          <div><div class="mini-name">BPI CC</div><div class="mini-sub">₱45k limit · 38% used</div></div>
-          <div class="mini-amt neg">₱17,100</div>
+        <div style="font-size:13px;font-weight:600;color:var(--t1);margin-bottom:2px">GCash</div>
+        <div style="font-family:'DM Mono',monospace;font-size:20px;color:var(--t1);letter-spacing:-0.5px;margin-bottom:8px">₱8,874.00</div>
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:2px">•••• 4825</div>
+          <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:800;font-style:italic;color:rgba(255,255,255,0.7)">VISA</div>
         </div>
       </div>
     </div>
@@ -1035,25 +1039,184 @@ Request Demo →
       </div>
     </div>
 
-    <!-- Transfers & Savings -->
+    <!-- Net Worth -->
     <div class="fcard wide reveal">
-      <div class="fcard-glow" style="background:var(--teal)"></div>
+      <div class="fcard-glow" style="background:var(--purple)"></div>
       <div style="display:flex;gap:24px;flex-wrap:wrap">
         <div style="flex:1;min-width:200px">
-          <div class="fcard-icon bg-teal c-teal">↔️</div>
-          <div class="fcard-title">Transfers</div>
-          <div class="fcard-desc">Move money between accounts without double-counting. Transfers correctly adjust both source and destination balances in real time.</div>
+          <div class="fcard-icon bg-purple c-purple">📊</div>
+          <div class="fcard-title">Smart Net Worth</div>
+          <div class="fcard-desc">Net worth now breaks into four distinct buckets — Liquid Assets, Investments, CC Liabilities, and Savings Goals. Archived accounts are excluded. Investment-type accounts tracked separately.</div>
+          <div class="fcard-tags" style="margin-top:12px">
+            <span class="ftag" style="background:rgba(32,204,120,0.15);color:var(--green)">Liquid assets</span>
+            <span class="ftag" style="background:rgba(59,107,255,0.15);color:var(--blue2)">Investments</span>
+            <span class="ftag" style="background:rgba(255,85,102,0.15);color:var(--red)">CC liabilities</span>
+            <span class="ftag" style="background:rgba(139,60,247,0.15);color:var(--purple)">Goals progress</span>
+          </div>
         </div>
         <div style="flex:1;min-width:200px">
-          <div class="fcard-icon bg-green c-green">🏦</div>
-          <div class="fcard-title">Savings Goals</div>
-          <div class="fcard-desc">Track money set aside for specific goals — travel fund, emergency fund, gadget — with deposit and withdrawal history per goal.</div>
+          <div class="fcard-icon bg-teal c-teal">↔️</div>
+          <div class="fcard-title">Transfers & Savings Goals</div>
+          <div class="fcard-desc">Move money between accounts without double-counting. Track money set aside for specific goals — travel fund, emergency fund, gadget — with per-goal deposit history and progress bars in Net Worth.</div>
+        </div>
+      </div>
+      <!-- Net Worth mini breakdown -->
+      <div style="margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+        <div style="background:rgba(32,204,120,0.08);border:1px solid rgba(32,204,120,0.15);border-radius:10px;padding:10px 12px">
+          <div style="font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:3px">Liquid</div>
+          <div style="font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--green)">₱54,013</div>
+        </div>
+        <div style="background:rgba(59,107,255,0.08);border:1px solid rgba(59,107,255,0.15);border-radius:10px;padding:10px 12px">
+          <div style="font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:3px">Investments</div>
+          <div style="font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--blue2)">₱12,000</div>
+        </div>
+        <div style="background:rgba(255,85,102,0.08);border:1px solid rgba(255,85,102,0.15);border-radius:10px;padding:10px 12px">
+          <div style="font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:3px">CC Owed</div>
+          <div style="font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--red)">₱17,100</div>
+        </div>
+        <div style="background:rgba(139,60,247,0.08);border:1px solid rgba(139,60,247,0.15);border-radius:10px;padding:10px 12px">
+          <div style="font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:3px">Saved Goals</div>
+          <div style="font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--purple)">₱8,500</div>
         </div>
       </div>
     </div>
 
-  </div>
+      </div>
+    </div>
+
+  </div><!-- /feature-grid -->
 </section>
+
+<!-- NEW FEATURES SECTION -->
+<div class="divider"></div>
+
+<div class="big-feature" id="new-features">
+  <div class="bf-content reveal">
+    <div class="bf-number">01b — Accounts</div>
+    <h2 class="bf-title">Bank cards that <span style="color:var(--teal)">feel real.</span></h2>
+    <p class="bf-desc">Upload your bank's logo and the app automatically extracts its accent color to build a matching gradient card. Choose Visa, Mastercard, Amex, JCB, or UnionPay as the network — the logo appears on the card face.</p>
+    <div class="bf-bullets">
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--teal)"></div><span>Logo-driven gradient — auto-extracted from uploaded image</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--teal)"></div><span>Card network selector — Visa, Mastercard, Amex, JCB, UnionPay</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--teal)"></div><span>Cash account gets a unique green banknote design</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--teal)"></div><span>Tap card to reveal actions — swipe-free, no overlay</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--teal)"></div><span>Drag-to-reorder — tap ⇅ Reorder, drag, tap Done to save</span></div>
+    </div>
+  </div>
+  <div class="bf-visual reveal" style="display:flex;flex-direction:column;gap:10px">
+    <!-- Card 1: Bank with gradient -->
+    <div style="border-radius:16px;padding:16px;background:linear-gradient(135deg,rgba(37,99,235,0.30) 0%,rgba(37,99,235,0.12) 45%,rgba(13,14,26,0.95) 100%);border:1px solid rgba(37,99,235,0.25);position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;width:3px;height:100%;background:#3B6BFF;opacity:0.6;border-radius:3px 0 0 3px"></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="width:38px;height:38px;border-radius:10px;background:rgba(37,99,235,0.15);display:flex;align-items:center;justify-content:center;font-size:18px">🏦</div>
+        <span style="font-size:9px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:999px;background:rgba(37,99,235,0.12);color:#5b8fff">PAYROLL</span>
+      </div>
+      <div style="font-size:14px;font-weight:600;color:var(--t1);margin-bottom:2px">Bank of Commerce</div>
+      <div style="font-family:'DM Mono',monospace;font-size:22px;color:var(--t1);letter-spacing:-0.5px;margin-bottom:6px">₱35,802.00</div>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.35);letter-spacing:2px">•••• 2231</div>
+        <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800;font-style:italic;color:rgba(255,255,255,0.65)">VISA</div>
+      </div>
+    </div>
+    <!-- Card 2: CC card -->
+    <div style="border-radius:16px;padding:16px;background:linear-gradient(135deg,rgba(220,38,38,0.25) 0%,rgba(220,38,38,0.08) 45%,rgba(13,14,26,0.95) 100%);border:1px solid rgba(220,38,38,0.20);position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;width:3px;height:100%;background:#ef4444;opacity:0.6;border-radius:3px 0 0 3px"></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="width:38px;height:38px;border-radius:10px;background:rgba(220,38,38,0.15);display:flex;align-items:center;justify-content:center;font-size:18px">🏛</div>
+        <span style="font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 7px;border-radius:999px;background:rgba(220,38,38,0.10);color:#f87171">Due 15th</span>
+      </div>
+      <div style="font-size:14px;font-weight:600;color:var(--t1);margin-bottom:2px">UnionBank</div>
+      <div style="font-size:9px;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px">Available Credit</div>
+      <div style="font-family:'DM Mono',monospace;font-size:20px;color:var(--t1);margin-bottom:6px">₱100,000.00</div>
+      <div style="height:3px;background:rgba(255,255,255,0.08);border-radius:2px;margin-bottom:5px"><div style="height:100%;width:0%;background:#ef4444;border-radius:2px"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,0.4)">
+        <span>Used ₱0.00</span><span style="margin-left:auto;padding-right:10px">Utilization 0%</span>
+        <div style="display:flex;align-items:center"><div style="width:14px;height:14px;border-radius:50%;background:#EB001B;opacity:0.8"></div><div style="width:14px;height:14px;border-radius:50%;background:#F79E1B;opacity:0.8;margin-left:-6px"></div></div>
+      </div>
+    </div>
+    <!-- Tap-to-expand tray -->
+    <div style="border-radius:12px;padding:8px;background:var(--bg2);border:1px solid var(--border);display:flex;gap:6px">
+      <div style="flex:1;padding:8px 4px;border-radius:8px;background:rgba(59,107,255,0.10);border:1px solid rgba(59,107,255,0.18);text-align:center;font-size:10px;font-weight:600;color:#5b8fff">👁 Txns</div>
+      <div style="flex:1;padding:8px 4px;border-radius:8px;background:rgba(139,60,247,0.10);border:1px solid rgba(139,60,247,0.18);text-align:center;font-size:10px;font-weight:600;color:#a78bfa">✏️ Edit</div>
+      <div style="flex:1;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);text-align:center;font-size:10px;font-weight:600;color:var(--t3)">📦 Archive</div>
+      <div style="flex:1;padding:8px 4px;border-radius:8px;background:rgba(220,38,38,0.10);border:1px solid rgba(220,38,38,0.18);text-align:center;font-size:10px;font-weight:600;color:#f87171">🗑 Remove</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- BILLS REDESIGN SECTION -->
+<div class="big-feature reverse">
+  <div class="bf-content reveal">
+    <div class="bf-number">05b — Bills</div>
+    <h2 class="bf-title">Bills that are <span style="color:var(--red)">crystal clear.</span></h2>
+    <p class="bf-desc">Each bill category has a dedicated SVG icon — electricity, water, internet, phone, rent, gas, insurance, loan, TV. Bills are grouped into color-coded sections with clear section headers.</p>
+    <div class="bf-bullets">
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--red)"></div><span>Color-coded sections — Overdue (red), Due Soon (amber), Upcoming (blue), Paid (green)</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--red)"></div><span>Category SVG icons — unique icon per bill type, no emojis</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--red)"></div><span>Pay button on unpaid bills — logs expense + advances cycle</span></div>
+      <div class="bf-bullet"><div class="bf-bullet-dot" style="background:var(--red)"></div><span>Recurring bills auto-generate next cycle on payment</span></div>
+    </div>
+  </div>
+  <div class="bf-visual reveal">
+    <!-- Section: Due Soon -->
+    <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;display:flex;align-items:center;gap:5px">
+      <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"/><line x1="5" y1="1.5" x2="5" y2="4"/><line x1="11" y1="1.5" x2="11" y2="4"/><line x1="2" y1="7" x2="14" y2="7"/></svg>
+      Due Soon
+    </div>
+    <!-- Bill cards -->
+    <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,184,48,0.05);border:1px solid rgba(255,255,255,0.06);border-left:3px solid var(--amber);border-radius:10px;margin-bottom:6px">
+      <div style="width:36px;height:36px;border-radius:8px;background:rgba(8,145,178,0.15);color:#22d4f0;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2C8 2 3 7.5 3 10.5a5 5 0 0 0 10 0C13 7.5 8 2 8 2z"/></svg>
+      </div>
+      <div style="flex:1">
+        <div style="font-size:12px;font-weight:500;color:var(--t1)">Maynilad</div>
+        <div style="font-size:10px;color:var(--t3)">Due 2026-03-17</div>
+        <div style="margin-top:4px;display:flex;gap:5px"><span style="font-size:9px;padding:2px 7px;border-radius:999px;background:rgba(255,184,48,0.12);color:var(--amber);font-weight:600">Due in 2d</span><span style="font-size:9px;padding:2px 7px;border-radius:999px;background:rgba(255,255,255,0.05);color:var(--t3);font-weight:600;border:1px solid rgba(255,255,255,0.08)">Monthly</span></div>
+      </div>
+      <div style="text-align:right;flex-shrink:0">
+        <div style="font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--t1);margin-bottom:5px">₱580</div>
+        <button style="padding:3px 10px;border-radius:6px;border:1px solid rgba(32,204,120,0.25);background:rgba(32,204,120,0.10);color:var(--green);font-size:10px;font-weight:600;cursor:pointer">Pay</button>
+      </div>
+    </div>
+    <!-- Upcoming -->
+    <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue2);margin:14px 0 8px;display:flex;align-items:center;gap:5px">
+      <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"/><line x1="5" y1="1.5" x2="5" y2="4"/><line x1="11" y1="1.5" x2="11" y2="4"/><line x1="2" y1="7" x2="14" y2="7"/></svg>
+      Upcoming
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:10px;margin-bottom:6px">
+      <div style="width:36px;height:36px;border-radius:8px;background:rgba(139,60,247,0.15);color:#a78bfa;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="1" width="7" height="14" rx="2"/><line x1="7.5" y1="12.5" x2="8.5" y2="12.5" stroke-width="2"/></svg>
+      </div>
+      <div style="flex:1">
+        <div style="font-size:12px;font-weight:500;color:var(--t1)">Smart</div>
+        <div style="font-size:10px;color:var(--t3)">Due 2026-04-20</div>
+        <div style="margin-top:4px;display:flex;gap:5px"><span style="font-size:9px;padding:2px 7px;border-radius:999px;background:rgba(255,255,255,0.05);color:var(--t3);font-weight:600;border:1px solid rgba(255,255,255,0.08)">Due Apr 20</span><span style="font-size:9px;padding:2px 7px;border-radius:999px;background:rgba(255,255,255,0.05);color:var(--t3);font-weight:600;border:1px solid rgba(255,255,255,0.08)">Monthly</span></div>
+      </div>
+      <div style="text-align:right;flex-shrink:0">
+        <div style="font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--t1);margin-bottom:5px">₱999</div>
+        <button style="padding:3px 10px;border-radius:6px;border:1px solid rgba(32,204,120,0.25);background:rgba(32,204,120,0.10);color:var(--green);font-size:10px;font-weight:600;cursor:pointer">Pay</button>
+      </div>
+    </div>
+    <!-- Paid -->
+    <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:14px 0 8px;display:flex;align-items:center;gap:5px">
+      <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,8 6,12 14,4"/></svg>
+      Paid
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:10px;opacity:0.55">
+      <div style="width:36px;height:36px;border-radius:8px;background:rgba(59,107,255,0.15);color:#5b8fff;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 2C8 2 5.5 5 5.5 8s2.5 6 2.5 6"/><path d="M8 2c0 0 2.5 3 2.5 6S8 14 8 14"/><line x1="2" y1="8" x2="14" y2="8"/></svg>
+      </div>
+      <div style="flex:1">
+        <div style="font-size:12px;font-weight:500;color:var(--t1)">PLDT Fiber</div>
+        <div style="font-size:10px;color:var(--t3)">Paid 2026-03-10</div>
+        <div style="margin-top:4px"><span style="font-size:9px;padding:2px 7px;border-radius:999px;background:rgba(32,204,120,0.10);color:var(--green);font-weight:600">✓ Paid</span></div>
+      </div>
+      <div style="font-family:'DM Mono',monospace;font-size:13px;font-weight:500;color:var(--t3)">₱1,699</div>
+    </div>
+  </div>
+</div>
 
 <!-- ANALYTICS SECTION -->
 <div class="divider"></div>
@@ -1062,11 +1225,10 @@ Request Demo →
   <div class="bf-content reveal">
     <div class="bf-number">02 — Analytics</div>
     <h2 class="bf-title">Charts that <span style="color:var(--blue2)">actually tell you something.</span></h2>
-    <p class="bf-desc">Five custom-drawn canvas charts give you a clear picture of your money over any time range — from 1 month to all time.</p>
+    <p class="bf-desc">Four custom-drawn canvas charts give you a clear picture of your money over any time range — from 1 month to all time.</p>
     <div class="bf-bullets">
       <div class="bf-bullet"><div class="bf-bullet-dot"></div><span>Income vs Expenses bar chart — grouped by month</span></div>
       <div class="bf-bullet"><div class="bf-bullet-dot"></div><span>Expense category donut chart with % breakdown</span></div>
-      <div class="bf-bullet"><div class="bf-bullet-dot"></div><span>Account balances horizontal bar chart</span></div>
       <div class="bf-bullet"><div class="bf-bullet-dot"></div><span>Savings growth line chart over time</span></div>
       <div class="bf-bullet"><div class="bf-bullet-dot"></div><span>Custom date range picker or preset periods (1M, 3M, 6M, All)</span></div>
     </div>
