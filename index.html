@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finance Tracker — Features</title>
+<title>Fintra — Your Financial Control Center</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -789,21 +789,16 @@ footer {
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-      <rect width="72" height="72" rx="18" fill="rgba(59,107,255,0.15)"/>
-      <rect x="14" y="36" width="44" height="7" rx="3.5" fill="#3B6BFF" transform="rotate(-35 36 36)"/>
-      <rect x="14" y="50" width="44" height="7" rx="3.5" fill="#8B3CF7" transform="rotate(-35 36 36)"/>
-      <circle cx="52" cy="20" r="6" fill="#20cc78"/>
-    </svg>
-    Finance Tracker
+    <img src="data:image/png;base64,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" style="width:32px;height:32px;border-radius:8px;flex-shrink:0;" alt="Fintra">
+    Fintra
   </div>
   <ul class="nav-links">
     <li><a href="#features">Features</a></li>
     <li><a href="#analytics">Analytics</a></li>
     <li><a href="#planning">Planning</a></li>
-    <li><a href="#pwa">PWA</a></li>
-    <a class="nav-cta" onclick="window.location.href='mailto:alforquefelixmarco@gmail.com'">
-Request Demo →
+    <li><a href="#install">Install</a></li>
+    <a class="nav-cta" href="#install">
+Install Fintra →
 </a></li>
   </ul>
 </nav>
@@ -812,15 +807,16 @@ Request Demo →
 <div class="hero">
   <div class="hero-badge">
     <span class="hero-badge-dot"></span>
-    Personal Finance Tracker — Offline PWA
+    Fintra — Now in Public Beta
   </div>
   <h1>Your money.<br><span class="grad">Fully under control.</span></h1>
   <p class="hero-sub">A complete personal finance tracker built as a PWA. Track every peso, plan every goal, and understand your financial health — beautifully designed with card-based accounts, smart net worth breakdown, and powerful analytics.</p>
   <div class="hero-actions">
-    <a class="nav-cta" onclick="window.location.href='mailto:alforquefelixmarco@gmail.com'">
-Request Demo →
-</a>
-    <a href="#features" class="btn-secondary">Explore features ↓</a>
+    <a class="btn-primary" href="#install">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L12 15M7 10l5 5 5-5"/><path d="M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2"/></svg>
+      How to Install
+    </a>
+    <a href="https://netfelix0921.github.io/fintra/" target="_blank" class="btn-secondary">Open App ↗</a>
   </div>
   <div class="hero-stats">
     <div class="hstat">
@@ -832,8 +828,8 @@ Request Demo →
       <div class="hstat-lbl">Offline</div>
     </div>
     <div class="hstat">
-      <div class="hstat-val purple">∞</div>
-      <div class="hstat-lbl">Free forever</div>
+      <div class="hstat-val" style="color:var(--amber)">Beta</div>
+      <div class="hstat-lbl">Open to public</div>
     </div>
     <div class="hstat">
       <div class="hstat-val" style="color:var(--amber)">0</div>
@@ -1373,48 +1369,353 @@ Request Demo →
   </div>
 </div>
 
-<!-- PWA STRIP -->
-<div style="padding:0 40px;max-width:1200px;margin:20px auto 80px" id="pwa">
-  <div class="pwa-strip reveal">
-    <div class="pwa-text">
-      <div class="section-label" style="margin-bottom:14px">PWA — Works Offline</div>
-      <h2 class="pwa-title">Installed like an app.<br>Works like a native.</h2>
-      <p class="pwa-desc">Add to your iPhone Home Screen and use it like a real app — no App Store needed. All your data lives locally on your device, private and offline.</p>
+<!-- INSTALL SECTION -->
+<div id="install" style="padding:100px 40px;max-width:1000px;margin:0 auto">
+
+  <!-- Section header -->
+  <div style="text-align:center;margin-bottom:60px">
+    <div class="section-label" style="margin-bottom:16px;display:inline-flex">
+      <span style="width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:pulse 2s ease infinite;margin-right:8px;flex-shrink:0;margin-top:1px"></span>
+      Install — Free, No App Store
     </div>
-    <div class="pwa-features">
-      <div class="pwa-feat">
-        <div class="pwa-feat-ico" style="background:rgba(32,204,120,0.15)">📱</div>
-        <span>Add to Home Screen on iOS & Android</span>
-      </div>
-      <div class="pwa-feat">
-        <div class="pwa-feat-ico" style="background:rgba(59,107,255,0.15)">✈️</div>
-        <span>Fully offline — works with no internet</span>
-      </div>
-      <div class="pwa-feat">
-        <div class="pwa-feat-ico" style="background:rgba(139,60,247,0.15)">🔒</div>
-        <span>All data stays on your device only</span>
-      </div>
-      <div class="pwa-feat">
-        <div class="pwa-feat-ico" style="background:rgba(255,184,48,0.15)">💾</div>
-        <span>Export JSON backup or CSV anytime</span>
-      </div>
-      <div class="pwa-feat">
-        <div class="pwa-feat-ico" style="background:rgba(34,212,240,0.15)">🌙</div>
-        <span>Dark mode + light mode toggle</span>
-      </div>
-      <div class="pwa-feat">
-        <div class="pwa-feat-ico" style="background:rgba(255,85,102,0.15)">🔍</div>
-        <span>Global search across all transactions</span>
-      </div>
+    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,64px);font-weight:800;letter-spacing:-2px;line-height:1.05;margin-bottom:20px">
+      Add to your<br><span style="background:linear-gradient(135deg,#3B6BFF,#8B3CF7,#22d4f0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">home screen.</span>
+    </h2>
+    <p style="font-size:17px;color:var(--t2);max-width:480px;margin:0 auto;font-weight:300;line-height:1.65">No App Store. No sign-up. Install Fintra directly from your browser in seconds — it works just like a real app.</p>
+  </div>
+
+  <!-- Install button -->
+  <div style="display:flex;justify-content:center;margin-bottom:64px">
+    <a href="https://netfelix0921.github.io/fintra/" target="_blank" style="display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:linear-gradient(135deg,#3B6BFF,#6B44EE);color:#fff;border-radius:14px;font-size:17px;font-weight:700;text-decoration:none;box-shadow:0 8px 36px rgba(59,107,255,0.45);transition:transform .15s,box-shadow .15s;font-family:'DM Sans',sans-serif" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 14px 48px rgba(59,107,255,0.60)'" onmouseout="this.style.transform='';this.style.boxShadow='0 8px 36px rgba(59,107,255,0.45)'">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L12 15M7 10l5 5 5-5"/><path d="M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2"/></svg>
+      Open &amp; Install Fintra
+    </a>
+  </div>
+
+  <!-- OS Tab switcher -->
+  <div style="display:flex;justify-content:center;margin-bottom:48px">
+    <div style="display:inline-flex;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:4px;gap:4px">
+      <button id="tab-android" onclick="switchTab('android')" style="display:flex;align-items:center;gap:8px;padding:10px 24px;border-radius:9px;border:none;background:linear-gradient(135deg,#3B6BFF,#6B44EE);color:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414C17.523 15.6479 17.2706 15.8935 16.9699 15.8935C16.6692 15.8935 16.4168 15.6479 16.4168 15.3414V9.3778C16.4168 9.07133 16.6692 8.82569 16.9699 8.82569C17.2706 8.82569 17.523 9.07133 17.523 9.3778V15.3414ZM7.58319 15.3414C7.58319 15.6479 7.33077 15.8935 7.03009 15.8935C6.72942 15.8935 6.477 15.6479 6.477 15.3414V9.3778C6.477 9.07133 6.72942 8.82569 7.03009 8.82569C7.33077 8.82569 7.58319 9.07133 7.58319 9.3778V15.3414ZM14.3961 17.9809C14.3961 18.2874 14.1437 18.533 13.843 18.533C13.5423 18.533 13.2899 18.2874 13.2899 17.9809V11.9839C13.2899 11.6774 13.5423 11.4318 13.843 11.4318C14.1437 11.4318 14.3961 11.6774 14.3961 11.9839V17.9809ZM10.7101 17.9809C10.7101 18.2874 10.4577 18.533 10.157 18.533C9.85634 18.533 9.60391 18.2874 9.60391 17.9809V11.9839C9.60391 11.6774 9.85634 11.4318 10.157 11.4318C10.4577 11.4318 10.7101 11.6774 10.7101 11.9839V17.9809ZM15.7537 7.23609L16.7872 5.33871C16.8548 5.21192 16.8095 5.05497 16.6855 4.98631C16.5614 4.91765 16.4074 4.96427 16.3397 5.09107L15.2938 7.0154C14.3195 6.58208 13.1894 6.33979 12 6.33979C10.8106 6.33979 9.6805 6.58208 8.70619 7.0154L7.66032 5.09107C7.59264 4.96427 7.43862 4.91765 7.31452 4.98631C7.19041 5.05497 7.14516 5.21192 7.21284 5.33871L8.24628 7.23609C6.33046 8.25488 5 10.2152 5 12.4776H19C19 10.2152 17.6695 8.25488 15.7537 7.23609ZM10.3917 10.1604H9.28546V9.04182H10.3917V10.1604ZM14.7145 10.1604H13.6083V9.04182H14.7145V10.1604Z"/></svg>
+        Android
+      </button>
+      <button id="tab-ios" onclick="switchTab('ios')" style="display:flex;align-items:center;gap:8px;padding:10px 24px;border-radius:9px;border:none;background:transparent;color:var(--t3);font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        iPhone (iOS)
+      </button>
     </div>
   </div>
+
+  <!-- ANDROID STEPS -->
+  <div id="steps-android">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+
+      <!-- Step 1 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(59,107,255,0.15);border:1px solid rgba(59,107,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--blue2)">1</div>
+        <!-- Phone mockup -->
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;position:relative;display:flex;flex-direction:column">
+          <!-- Status bar -->
+          <div style="height:22px;background:rgba(255,255,255,0.03);display:flex;align-items:center;padding:0 10px;flex-shrink:0">
+            <span style="font-size:8px;color:var(--t3);font-family:'DM Mono',monospace">8:29</span>
+            <div style="margin-left:auto;display:flex;gap:3px;align-items:center">
+              <div style="width:10px;height:5px;border:1px solid var(--t3);border-radius:1px;position:relative"><div style="position:absolute;right:-3px;top:50%;transform:translateY(-50%);width:2px;height:3px;background:var(--t3);border-radius:1px"></div><div style="width:80%;height:100%;background:var(--green);border-radius:1px"></div></div>
+            </div>
+          </div>
+          <!-- Browser address bar -->
+          <div style="margin:6px 8px;background:rgba(255,255,255,0.06);border-radius:6px;padding:5px 10px;display:flex;align-items:center;gap:6px;flex-shrink:0">
+            <div style="width:8px;height:8px;border-radius:50%;border:1px solid var(--t3);flex-shrink:0"></div>
+            <span style="font-size:9px;color:var(--t2);font-family:'DM Mono',monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">netfelix0921.github.io</span>
+            <div style="margin-left:auto;display:flex;gap:4px;flex-shrink:0">
+              <div style="width:16px;height:16px;border-radius:4px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center">
+                <svg width="8" height="8" viewBox="0 0 16 16" fill="none" stroke="var(--t3)" stroke-width="2"><circle cx="6.5" cy="6.5" r="4"/><line x1="10" y1="10" x2="14" y2="14"/></svg>
+              </div>
+              <!-- Three dots highlighted -->
+              <div style="width:16px;height:16px;border-radius:4px;background:rgba(59,107,255,0.25);border:1px solid rgba(59,107,255,0.5);display:flex;align-items:center;justify-content:center">
+                <svg width="10" height="10" viewBox="0 0 4 16" fill="var(--blue2)"><circle cx="2" cy="2" r="1.5"/><circle cx="2" cy="8" r="1.5"/><circle cx="2" cy="14" r="1.5"/></svg>
+              </div>
+            </div>
+          </div>
+          <!-- App preview -->
+          <div style="flex:1;padding:8px;display:flex;flex-direction:column;gap:4px;overflow:hidden">
+            <div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;font-weight:600">GOOD EVENING</div>
+            <div style="font-size:13px;font-weight:700;color:var(--t1)">Hey, <span style="color:var(--blue2)">there.</span></div>
+            <div style="margin-top:4px;background:linear-gradient(135deg,rgba(37,99,235,0.4),rgba(139,60,247,0.25));border-radius:10px;padding:10px;flex:1">
+              <div style="font-size:7px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:.06em">NET WORTH</div>
+              <div style="font-family:'DM Mono',monospace;font-size:18px;font-weight:600;color:#fff">₱0.00</div>
+            </div>
+          </div>
+          <!-- Highlight arrow pointing to 3-dot -->
+          <div style="position:absolute;top:34px;right:8px;width:20px;height:20px;border-radius:50%;background:rgba(59,107,255,0.30);border:2px solid var(--blue2);animation:pulse 2s ease infinite"></div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px">Open Chrome menu</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Tap the <strong style="color:var(--t2)">⋮ three-dot menu</strong> in the top-right corner of Chrome.</div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(59,107,255,0.15);border:1px solid rgba(59,107,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--blue2)">2</div>
+        <!-- Menu mockup -->
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;display:flex;flex-direction:column;justify-content:center;padding:8px">
+          <div style="background:rgba(30,32,50,0.95);border-radius:10px;overflow:hidden;border:1px solid var(--border)">
+            <div style="padding:9px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border);opacity:0.4">
+              <div style="width:14px;height:14px;border-radius:2px;background:var(--t3)"></div>
+              <span style="font-size:11px;color:var(--t2)">New incognito tab</span>
+            </div>
+            <div style="padding:9px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border);opacity:0.4">
+              <div style="width:14px;height:14px;border-radius:2px;background:var(--t3)"></div>
+              <span style="font-size:11px;color:var(--t2)">History</span>
+            </div>
+            <!-- Highlighted row -->
+            <div style="padding:9px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border);background:rgba(59,107,255,0.18);border-left:3px solid var(--blue2)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--blue2)" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
+              <span style="font-size:11px;color:var(--blue2);font-weight:600">Add to Home screen</span>
+            </div>
+            <div style="padding:9px 14px;display:flex;align-items:center;gap:10px;opacity:0.4">
+              <div style="width:14px;height:14px;border-radius:2px;background:var(--t3)"></div>
+              <span style="font-size:11px;color:var(--t2)">Settings</span>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px">Tap "Add to Home screen"</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Scroll down the menu and tap <strong style="color:var(--t2)">Add to Home screen</strong>.</div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(59,107,255,0.15);border:1px solid rgba(59,107,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--blue2)">3</div>
+        <!-- Install dialog mockup -->
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;display:flex;flex-direction:column;justify-content:flex-end">
+          <!-- Blurred bg -->
+          <div style="flex:1;padding:8px;opacity:0.3">
+            <div style="font-size:8px;color:var(--t3);text-transform:uppercase;margin-bottom:4px">GOOD EVENING</div>
+            <div style="font-size:12px;color:var(--t1)">Hey, <span style="color:var(--blue2)">there.</span></div>
+          </div>
+          <!-- Bottom sheet -->
+          <div style="background:rgba(25,26,40,0.98);border-radius:16px 16px 0 0;border-top:1px solid var(--border2);padding:16px">
+            <div style="width:30px;height:3px;background:var(--t4);border-radius:2px;margin:0 auto 12px"></div>
+            <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:10px">Add to Home Screen</div>
+            <!-- Install option highlighted -->
+            <div style="padding:10px;border-radius:10px;background:rgba(59,107,255,0.12);border:1px solid rgba(59,107,255,0.30);display:flex;align-items:center;gap:10px;margin-bottom:6px">
+              <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#0A0618,#120D30);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                <svg width="18" height="18" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ib" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A0618"/><stop offset="100%" stop-color="#120D30"/></linearGradient></defs><rect width="110" height="110" rx="26" fill="url(#ib)"/><g transform="rotate(-8 55 55)"><rect x="24" y="18" width="13" height="72" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="18" width="52" height="13" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="46" width="36" height="12" rx="5" fill="rgba(255,255,255,0.9)"/></g></svg>
+              </div>
+              <div>
+                <div style="font-size:11px;font-weight:600;color:var(--blue2)">Install</div>
+                <div style="font-size:9px;color:var(--t3)">Fintra PWA</div>
+              </div>
+            </div>
+            <div style="padding:10px;border-radius:10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);display:flex;align-items:center;gap:10px;opacity:0.5">
+              <div style="width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px">🔗</div>
+              <div style="font-size:11px;color:var(--t3)">Create shortcut</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px">Tap "Install"</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Choose <strong style="color:var(--t2)">Install</strong> (not just shortcut) for the full app experience.</div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(32,204,120,0.15);border:1px solid rgba(32,204,120,0.30);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--green)">4</div>
+        <!-- Success state mockup -->
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#0A0618,#120D30);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(59,107,255,0.35)">
+            <svg width="32" height="32" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ic2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A0618"/><stop offset="100%" stop-color="#120D30"/></linearGradient><linearGradient id="sl2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient><clipPath id="cl2"><rect width="110" height="110" rx="26"/></clipPath></defs><rect width="110" height="110" rx="26" fill="url(#ic2)"/><g transform="rotate(-8 55 55)"><rect x="24" y="18" width="13" height="72" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="18" width="52" height="13" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="46" width="36" height="12" rx="5" fill="rgba(255,255,255,0.9)"/></g><rect x="52" y="-8" width="14" height="130" rx="7" fill="url(#sl2)" transform="rotate(30 55 55)" clip-path="url(#cl2)" opacity="0.95"/></svg>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:13px;font-weight:700;color:var(--t1)">Fintra</div>
+            <div style="font-size:10px;color:var(--t3)">Added to home screen</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:rgba(32,204,120,0.12);border:1px solid rgba(32,204,120,0.25)">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span style="font-size:11px;font-weight:600;color:var(--green)">Installed</span>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:6px">Done! Launch from home screen</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Fintra now lives on your home screen. Open it anytime — no browser chrome, full screen.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- iOS STEPS -->
+  <div id="steps-ios" style="display:none">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+
+      <!-- iOS Step 1 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(59,107,255,0.15);border:1px solid rgba(59,107,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--blue2)">1</div>
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;position:relative;display:flex;flex-direction:column">
+          <!-- iOS status bar -->
+          <div style="height:22px;background:rgba(255,255,255,0.04);display:flex;align-items:center;padding:0 12px;flex-shrink:0">
+            <span style="font-size:9px;font-weight:600;color:var(--t1)">8:27</span>
+            <div style="margin-left:auto;display:flex;gap:3px;align-items:center">
+              <svg width="12" height="8" viewBox="0 0 17 12" fill="var(--t2)"><rect x="0" y="4" width="3" height="8" rx="1"/><rect x="4.5" y="2.5" width="3" height="9.5" rx="1"/><rect x="9" y="1" width="3" height="11" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg>
+              <span style="font-size:8px;color:var(--t2);font-weight:600">5G</span>
+              <div style="width:16px;height:8px;border:1.5px solid var(--t2);border-radius:2px;position:relative;margin-left:2px"><div style="position:absolute;right:-3px;top:50%;transform:translateY(-50%);width:2px;height:4px;background:var(--t2);border-radius:1px"></div><div style="width:20%;height:100%;background:var(--t2);border-radius:1px"></div></div>
+            </div>
+          </div>
+          <!-- Safari address bar -->
+          <div style="margin:5px 8px;background:rgba(255,255,255,0.08);border-radius:8px;padding:5px 10px;display:flex;align-items:center;gap:6px;flex-shrink:0">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
+            <span style="font-size:9px;color:var(--t2);font-family:'DM Mono',monospace;flex:1;text-align:center">netfelix0921.github.io</span>
+          </div>
+          <!-- App preview -->
+          <div style="flex:1;padding:8px">
+            <div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.06em;font-weight:600">GOOD EVENING</div>
+            <div style="font-size:12px;font-weight:700;color:var(--t1)">Hey, <span style="color:var(--blue2)">Felix.</span></div>
+            <div style="margin-top:6px;background:linear-gradient(135deg,rgba(37,99,235,0.4),rgba(139,60,247,0.25));border-radius:10px;padding:8px">
+              <div style="font-size:7px;color:rgba(255,255,255,0.5);text-transform:uppercase">NET WORTH</div>
+              <div style="font-family:'DM Mono',monospace;font-size:16px;color:#fff">₱0.00</div>
+            </div>
+          </div>
+          <!-- iOS Safari bottom bar with share highlighted -->
+          <div style="height:32px;background:rgba(255,255,255,0.04);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-around;padding:0 8px;flex-shrink:0">
+            <div style="opacity:0.35"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></div>
+            <div style="opacity:0.35"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            <!-- Share button highlighted -->
+            <div style="width:28px;height:28px;border-radius:7px;background:rgba(59,107,255,0.25);border:1.5px solid var(--blue2);display:flex;align-items:center;justify-content:center">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--blue2)" stroke-width="2.2" stroke-linecap="round"><path d="M8.59 13.51L15.42 17.49M15.41 6.51L8.59 10.49M21 5a3 3 0 11-6 0 3 3 0 016 0zM9 12a3 3 0 11-6 0 3 3 0 016 0zM21 19a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div style="opacity:0.35"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+            <div style="opacity:0.35"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="2" stroke-linecap="round"><path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M3.6 9h16.8M3.6 15h16.8"/></svg></div>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px">Open in Safari &amp; tap Share</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Open Fintra in <strong style="color:var(--t2)">Safari</strong> (not Chrome). Tap the <strong style="color:var(--t2)">Share ↑</strong> button at the bottom.</div>
+      </div>
+
+      <!-- iOS Step 2 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(59,107,255,0.15);border:1px solid rgba(59,107,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--blue2)">2</div>
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;display:flex;flex-direction:column;justify-content:flex-end">
+          <div style="flex:1;opacity:0.25;padding:8px">
+            <div style="font-size:10px;color:var(--t3)">Fintra — Your Financial Control...</div>
+            <div style="font-size:8px;color:var(--t3)">netfelix0921.github.io</div>
+          </div>
+          <!-- Share sheet -->
+          <div style="background:rgba(235,235,240,0.10);backdrop-filter:blur(20px);border-radius:14px 14px 0 0;padding:14px 12px">
+            <div style="width:30px;height:3px;background:var(--t4);border-radius:2px;margin:0 auto 10px"></div>
+            <!-- Action row -->
+            <div style="display:flex;gap:8px;margin-bottom:10px;overflow:hidden">
+              <div style="flex:1;text-align:center">
+                <div style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.08);margin:0 auto 4px;display:flex;align-items:center;justify-content:center">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                </div>
+                <div style="font-size:8px;color:var(--t3)">Copy</div>
+              </div>
+              <div style="flex:1;text-align:center">
+                <div style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.08);margin:0 auto 4px;display:flex;align-items:center;justify-content:center">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="1.8" stroke-linecap="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/></svg>
+                </div>
+                <div style="font-size:8px;color:var(--t3)">Bookmark</div>
+              </div>
+              <!-- Add to Home Screen highlighted -->
+              <div style="flex:1;text-align:center">
+                <div style="width:36px;height:36px;border-radius:10px;background:rgba(59,107,255,0.25);border:1.5px solid var(--blue2);margin:0 auto 4px;display:flex;align-items:center;justify-content:center">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--blue2)" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></svg>
+                </div>
+                <div style="font-size:8px;color:var(--blue2);font-weight:600">Add Home</div>
+              </div>
+            </div>
+            <div style="background:rgba(255,255,255,0.05);border-radius:10px;padding:8px 12px;text-align:center;font-size:10px;color:var(--t3)">More options below...</div>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px">Tap "Add to Home Screen"</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">In the share sheet, find and tap <strong style="color:var(--t2)">Add to Home Screen</strong>.</div>
+      </div>
+
+      <!-- iOS Step 3 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(59,107,255,0.15);border:1px solid rgba(59,107,255,0.25);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--blue2)">3</div>
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:#f2f2f7;border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;display:flex;flex-direction:column">
+          <!-- Light mode header -->
+          <div style="height:22px;background:#f2f2f7;display:flex;align-items:center;padding:0 12px;flex-shrink:0">
+            <span style="font-size:9px;font-weight:600;color:#000">8:28</span>
+          </div>
+          <div style="background:#fff;border-bottom:1px solid #e5e5ea;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0">
+            <div style="width:24px;height:24px;border-radius:6px;background:#007AFF;display:flex;align-items:center;justify-content:center">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </div>
+            <span style="font-size:12px;font-weight:600;color:#000">Add to Home Screen</span>
+            <div style="padding:3px 10px;background:#007AFF;border-radius:6px">
+              <span style="font-size:11px;font-weight:600;color:#fff">Add</span>
+            </div>
+          </div>
+          <!-- Name field -->
+          <div style="padding:14px;flex:1;background:#f2f2f7">
+            <div style="background:#fff;border-radius:10px;padding:10px 12px;display:flex;align-items:center;gap:10px;margin-bottom:8px">
+              <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#0A0618,#120D30);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                <svg width="20" height="20" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ic3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A0618"/><stop offset="100%" stop-color="#120D30"/></linearGradient></defs><rect width="110" height="110" rx="26" fill="url(#ic3)"/><g transform="rotate(-8 55 55)"><rect x="24" y="18" width="13" height="72" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="18" width="52" height="13" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="46" width="36" height="12" rx="5" fill="rgba(255,255,255,0.9)"/></g></svg>
+              </div>
+              <div style="flex:1">
+                <input style="border:none;outline:none;font-size:13px;font-weight:500;color:#000;background:transparent;width:100%;border-bottom:1.5px solid #007AFF" value="Fintra" readonly>
+              </div>
+            </div>
+            <div style="font-size:10px;color:#8e8e93;padding:0 4px">https://netfelix0921.github.io/fintra/</div>
+            <div style="margin-top:10px;padding:8px;background:rgba(0,122,255,0.06);border-radius:8px;border:1px solid rgba(0,122,255,0.15)">
+              <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#007AFF" stroke-width="2" stroke-linecap="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                <span style="font-size:9px;color:#007AFF;font-weight:600">Open as Web App — ON</span>
+              </div>
+              <div style="font-size:8px;color:#8e8e93">Opens without browser chrome</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px">Name it &amp; tap "Add"</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Keep the name as <strong style="color:var(--t2)">Fintra</strong>. Make sure <strong style="color:var(--t2)">Open as Web App</strong> is on. Tap <strong style="color:var(--t2)">Add</strong>.</div>
+      </div>
+
+      <!-- iOS Step 4 -->
+      <div class="install-step reveal" style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:24px;position:relative">
+        <div style="position:absolute;top:16px;right:16px;width:28px;height:28px;border-radius:50%;background:rgba(32,204,120,0.15);border:1px solid rgba(32,204,120,0.30);display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:600;color:var(--green)">4</div>
+        <div style="width:100%;aspect-ratio:9/16;max-height:200px;background:var(--bg3);border-radius:14px;border:1px solid var(--border2);overflow:hidden;margin-bottom:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+          <div style="width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#0A0618,#120D30);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(59,107,255,0.35)">
+            <svg width="32" height="32" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ic4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A0618"/><stop offset="100%" stop-color="#120D30"/></linearGradient><linearGradient id="sl4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient><clipPath id="cl4"><rect width="110" height="110" rx="26"/></clipPath></defs><rect width="110" height="110" rx="26" fill="url(#ic4)"/><g transform="rotate(-8 55 55)"><rect x="24" y="18" width="13" height="72" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="18" width="52" height="13" rx="5" fill="rgba(255,255,255,0.9)"/><rect x="24" y="46" width="36" height="12" rx="5" fill="rgba(255,255,255,0.9)"/></g><rect x="52" y="-8" width="14" height="130" rx="7" fill="url(#sl4)" transform="rotate(30 55 55)" clip-path="url(#cl4)" opacity="0.95"/></svg>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:13px;font-weight:700;color:var(--t1)">Fintra</div>
+            <div style="font-size:10px;color:var(--t3)">On your home screen</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:rgba(32,204,120,0.12);border:1px solid rgba(32,204,120,0.25)">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span style="font-size:11px;font-weight:600;color:var(--green)">Installed</span>
+          </div>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:6px">Done! Open from home screen</div>
+        <div style="font-size:12px;color:var(--t3);line-height:1.5">Fintra opens full screen — no Safari bars. Your data stays on-device, private.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom note -->
+  <div style="margin-top:48px;padding:20px 24px;background:var(--bg2);border:1px solid var(--border);border-radius:14px;display:flex;align-items:flex-start;gap:14px">
+    <div style="width:32px;height:32px;border-radius:8px;background:rgba(32,204,120,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--t1);margin-bottom:4px">Works completely offline</div>
+      <div style="font-size:12px;color:var(--t3);line-height:1.6">Once installed, Fintra works with no internet. All your data is stored locally on your device — never uploaded, never tracked. You can export a JSON or CSV backup anytime from the Profile tab.</div>
+    </div>
+  </div>
+
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Finance Tracker</div>
+  <div class="footer-logo">Fintra</div>
   <div class="footer-copy">Private · Offline · No tracking</div>
 </footer>
+
+<style>
+.install-step { transition: transform .2s, box-shadow .2s; }
+.install-step:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.3); }
+@media (max-width: 600px) {
+  #install { padding: 60px 20px; }
+}
+</style>
 
 <script>
 // Scroll reveal
@@ -1436,6 +1737,33 @@ reveals.forEach(el => observer.observe(el));
 document.querySelectorAll('.feature-grid .reveal').forEach((el, i) => {
   el.style.transitionDelay = (i * 80) + 'ms';
 });
+
+// Install tab switcher
+function switchTab(os) {
+  const androidSteps = document.getElementById('steps-android');
+  const iosSteps = document.getElementById('steps-ios');
+  const tabAndroid = document.getElementById('tab-android');
+  const tabIos = document.getElementById('tab-ios');
+  const active = 'background:linear-gradient(135deg,#3B6BFF,#6B44EE);color:#fff';
+  const inactive = 'background:transparent;color:var(--t3)';
+  if (os === 'android') {
+    androidSteps.style.display = '';
+    iosSteps.style.display = 'none';
+    tabAndroid.style.cssText = tabAndroid.style.cssText.replace(/background:[^;]+;color:[^;]+/, active);
+    tabIos.style.cssText = tabIos.style.cssText.replace(/background:[^;]+;color:[^;]+/, inactive);
+    tabAndroid.style.background = 'linear-gradient(135deg,#3B6BFF,#6B44EE)';
+    tabAndroid.style.color = '#fff';
+    tabIos.style.background = 'transparent';
+    tabIos.style.color = 'var(--t3)';
+  } else {
+    androidSteps.style.display = 'none';
+    iosSteps.style.display = '';
+    tabIos.style.background = 'linear-gradient(135deg,#3B6BFF,#6B44EE)';
+    tabIos.style.color = '#fff';
+    tabAndroid.style.background = 'transparent';
+    tabAndroid.style.color = 'var(--t3)';
+  }
+}
 </script>
 </body>
 </html>
